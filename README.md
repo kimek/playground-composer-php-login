@@ -1,4 +1,4 @@
-# Vanilla PHP Login System
+# Basic PHP Login System with composer usage
 
 A test login system built in 6 hours with some composer vendors in PHP, featuring user registration, login, and file uploads. 
 
