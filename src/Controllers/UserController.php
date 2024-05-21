@@ -1,4 +1,5 @@
 <?php
+
 namespace Kimek\UserRegistration\Controllers;
 
 use Illuminate\Database\QueryException;
@@ -49,17 +50,17 @@ class UserController
 		try {
 			$user = $this->userRepository->setUserEntity($username, $password);
 
-			if($user) {
+			if ($user) {
 				return new JsonResponse(['message' => "User created"]);
 			}
 		} catch (\Throwable $e) {
-			if($e instanceof QueryException){
+			if ($e instanceof QueryException) {
 				$errorCode = $e->errorInfo[1];
 				switch ($errorCode) {
 					case 1062:
 						return new JsonResponse([
-							'errors'=>'Duplicate Entry'
-						],404);
+							'errors' => 'Duplicate Entry'
+						], 404);
 						break;
 				}
 			}

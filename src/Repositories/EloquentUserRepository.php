@@ -1,4 +1,5 @@
 <?php
+
 namespace Kimek\UserRegistration\Repositories;
 
 use Kimek\UserRegistration\Models\User;
@@ -31,7 +32,8 @@ class EloquentUserRepository implements UserEntityInterface
 		return true;
 	}
 
-	public function getIdentifier(): string {
+	public function getIdentifier(): string
+	{
 
 	}
 }

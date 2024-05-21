@@ -1,4 +1,5 @@
 <?php
+
 namespace Kimek\UserRegistration\Controllers;
 
 use League\Flysystem\Filesystem;

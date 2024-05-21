@@ -27,13 +27,12 @@ $userController = new UserController($userRepository);
 $fileController = new FileUploader(__DIR__ . '/uploads');
 
 
-
 //todo set response
 $response = null;
 // TODO - refactor to handle request by form action
 $data = $request->getParsedBody();
 
-if(isset($data['action'])) {
+if (isset($data['action'])) {
 	switch ($data['action']) {
 		case 'login':
 			$response = $userController->login($request);

@@ -1,6 +1,7 @@
 # Basic PHP Login System with composer usage
 
-A test login system built in 6 hours with some composer vendors in PHP, featuring user registration, login, and file uploads. 
+A test login system built in 6 hours with some composer vendors in PHP, featuring user registration, login, and file
+uploads.
 
 Note: This code is a demonstration of my skills and is not perfect.
 
@@ -42,10 +43,10 @@ Note: This code is a demonstration of my skills and is not perfect.
 
 
 5. **Install dependancies**:
-   - Run composer install:
-     ```sh
-     composer install
-     ```
+    - Run composer install:
+      ```sh
+      composer install
+      ```
 
 ## Usage
 
@@ -55,6 +56,7 @@ Note: This code is a demonstration of my skills and is not perfect.
     ```
 
 2. **Access the application api**:
+
 - Login
 
     ```shell
@@ -66,6 +68,7 @@ Note: This code is a demonstration of my skills and is not perfect.
    ```shell
    curl -X POST -d "email=matt1&password=matt12345&action=register" http://localhost:8000/src/api.php
    ```
+
 ## Features
 
 - User Registration
